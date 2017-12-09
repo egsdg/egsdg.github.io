@@ -2,10 +2,88 @@
 # You don't need to edit this file, it's empty on purpose.
 # Edit theme's home layout instead if you wanna make some changes
 # See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-layout: home
+#layout: home
+layout: compress
 ---
-<div class="item active">
-         <img src="data:image/png;base64,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">
-         
-         <link rel="manifest" href="/manifest.json">
-         <script src="app.js" ></script>
+
+<html lang="en" class="no-js">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ site.title }}</title>
+    <meta name="description" content="{{ site.description }}"/>
+    <meta name="keywords" content="{{ site.keywords }}"/>
+    <meta name="author" content="{{ site.author }}"/>
+    <link rel="shortcut icon" href="{{ site.baseurl }}/img/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/normalize.css"/>
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/fonts/font-awesome/css/font-awesome.css"/>
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/body.css"/>
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/card.css"/>
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/pattern.css"/>
+    <!--[if IE]>
+    <script type="text/javascript" src="js/vendors/html5.min.js"></script>
+    <![endif]-->
+    <script>
+        if (navigator.userAgent.toLowerCase().indexOf('firefox') > -1) {
+            var root = document.getElementsByTagName('html')[0];
+            root.setAttribute('class', 'ff');
+        }
+    </script>
+</head>
+<body class="demo-1">
+<div class="container">
+    <header class="codrops-header">
+      <h1>Card Expansion Effect with SVG clipPath <span>Circular clip</span></h1>
+ </header>
+    <div class="content">
+        <!-- trianglify pattern container -->
+        <div class="pattern pattern--hidden"></div>
+        <!-- cards -->
+        <div class="wrapper">
+            {% for post in site.posts %}
+            <div class="card" data-id="{{ post.id }}">
+                <div class="card__container card__container--closed">
+                    <svg class="card__image" xmlns="http://www.w3.org/2000/svg"
+                         xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 1200"
+                         preserveAspectRatio="xMidYMid slice">
+                        <defs>
+                            <clipPath id="{{ post.id }}-clip-path">
+                                <polygon class="clip" points="0,1200 0,0 1920,0 1920,1200"></polygon>
+                            </clipPath>
+                        </defs>
+                        <image clip-path="url(#{{ post.id }}-clip-path)" width="1920" height="1200"
+                               xlink:href="{{ post.image }}"></image>
+                    </svg>
+                    <div class="card__content">
+                        <i class="card__btn-close fa fa-times"></i>
+                        <div class="card__caption">
+                            <h2 class="card__title">{{ post.title }}</h2>
+                            <p class="card__subtitle">{{ post.subtitle }}</p>
+                        </div>
+                        <div class="card__copy">
+                            <div class="meta">
+                                <img class="meta__avatar" src="{{ post.avatar }}"/>
+                                <span class="meta__author">{{ post.author }}</span>
+                                <span class="meta__date">{{ post.date | date: "%Y-%m-%d" }}</span>
+                            </div>
+                            {{ post.content }}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+            <!-- /cards -->
+        </div>
+    </div>
+    <!-- /container -->
+</div>
+<!-- JS -->
+<script src="{{ site.baseurl }}/js/vendors/trianglify.min.js"></script>
+<script src="{{ site.baseurl }}/js/vendors/TweenMax.min.js"></script>
+<script src="{{ site.baseurl }}/js/vendors/ScrollToPlugin.min.js"></script>
+<script src="{{ site.baseurl }}/js/vendors/cash.min.js"></script>
+<script src="{{ site.baseurl }}/js/Card-circle.js"></script>
+<script src="{{ site.baseurl }}/js/modern-blog.js"></script>
+</body>
+</html>
