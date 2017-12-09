@@ -7,7 +7,7 @@ const workbox = new WorkboxSW({
   clientsClaim: true
 });
 
-workbox.router.registerRoute(/(.*)views(.*)\.(?:png|gif|jpg|html)/,
+workbox.router.registerRoute(/(.*)img(.*)\.(?:png|gif|jpg|html)/,
   workbox.strategies.networkFirst(),
                              
 
@@ -39,6 +39,10 @@ workbox.precache([
   },
   {
     "url": "/jekyll/update/2017/12/08/welcome-to-jekyll.html",
+    "revision": "65622a1710ad8c318480f474ea5"
+  },
+  {
+    "url": "/img/e.jpg",
     "revision": "65622a1710ad8c318480f474ea5"
   }
 ]);

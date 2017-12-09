@@ -3,6 +3,7 @@
 # Edit theme's home layout instead if you wanna make some changes
 # See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 #layout: home
+#layout: compress
 layout: compress
 ---
 
@@ -24,6 +25,8 @@ layout: compress
     <!--[if IE]>
     <script type="text/javascript" src="js/vendors/html5.min.js"></script>
     <![endif]-->
+    
+   
     <script>
         if (navigator.userAgent.toLowerCase().indexOf('firefox') > -1) {
             var root = document.getElementsByTagName('html')[0];
@@ -34,7 +37,15 @@ layout: compress
 <body class="demo-1">
 <div class="container">
     <header class="codrops-header">
-      <h1>Card Expansion Effect with SVG clipPath <span>Circular clip</span></h1>
+      <h1>Sustainable Development  <span>التنميه المستدامه</span></h1>
+      
+<nav>
+            <h1><a href="{{ site.baseurl }}/">Home</a></h1>
+          <h1>  <a href="{{ site.baseurl }}/about">About</a></h1>
+           <h1>  <a href="{{ site.baseurl }}/blog">Blog</a></h1>
+</nav>
+
+
  </header>
     <div class="content">
         <!-- trianglify pattern container -->
@@ -66,6 +77,7 @@ layout: compress
                                 <img class="meta__avatar" src="{{ post.avatar }}"/>
                                 <span class="meta__author">{{ post.author }}</span>
                                 <span class="meta__date">{{ post.date | date: "%Y-%m-%d" }}</span>
+                               
                             </div>
                             {{ post.content }}
                         </div>
@@ -74,10 +86,16 @@ layout: compress
             </div>
             {% endfor %}
             <!-- /cards -->
+            
+            
         </div>
     </div>
     <!-- /container -->
 </div>
+
+
+
+
 <!-- JS -->
 <script src="{{ site.baseurl }}/js/vendors/trianglify.min.js"></script>
 <script src="{{ site.baseurl }}/js/vendors/TweenMax.min.js"></script>
@@ -85,5 +103,8 @@ layout: compress
 <script src="{{ site.baseurl }}/js/vendors/cash.min.js"></script>
 <script src="{{ site.baseurl }}/js/Card-circle.js"></script>
 <script src="{{ site.baseurl }}/js/modern-blog.js"></script>
+<script src="app.js" ></script>
+
 </body>
 </html>
+
