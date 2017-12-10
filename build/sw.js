@@ -1,49 +1,42 @@
-'use strict';
+importScripts('workbox-sw.prod.v2.1.2.js');
 
-
-importScripts('https://cdn.jsdelivr.net/npm/workbox-sw@2.1.2/build/importScripts/workbox-sw.prod.v2.1.2.min.js');
-const workbox = new WorkboxSW({
-  skipWaiting: true,
-  clientsClaim: true
-});
-
-workbox.router.registerRoute(/(.*)img(.*)\.(?:png|gif|jpg|html)/,
-  workbox.strategies.networkFirst(),
-                             
-
-);
-
-self.addEventListener('push', (event) => {
-  const title = 'Get Started With Workbox For Webpack';
-  const options = {
-    body: event.data.text()
-  };
-  event.waitUntil(self.registration.showNotification(title, options));
-});
-workbox.precache([
+/**
+ * DO NOT EDIT THE FILE MANIFEST ENTRY
+ *
+ * The method precache() does the following:
+ * 1. Cache URLs in the manifest to a local cache.
+ * 2. When a network request is made for any of these URLs the response
+ *    will ALWAYS comes from the cache, NEVER the network.
+ * 3. When the service worker changes ONLY assets with a revision change are
+ *    updated, old cache entries are left as is.
+ *
+ * By changing the file manifest manually, your users may end up not receiving
+ * new versions of files because the revision hasn't changed.
+ *
+ * Please use workbox-build or some other tool / approach to generate the file
+ * manifest which accounts for changes to local files and update the revision
+ * accordingly.
+ */
+const fileManifest = [
   {
     "url": "404.html",
-    "revision": "8b86cde5ca6b681943fb596546d297c3"
+    "revision": "6a0fe4d94e0a00f270f545554ec682e7"
   },
   {
     "url": "about/index.html",
-    "revision": "5105850bf009b26a9ea521251eea46b9"
+    "revision": "eccf02f8193622bfb8e82f69056a29af"
   },
   {
     "url": "app.js",
-    "revision": "f43d0cfbbb5cb24424c25fb5d21b6658"
+    "revision": "0063b2b2a446a83eb65a7005cce9e427"
   },
   {
     "url": "assets/main.css",
     "revision": "3ccc41e0ee906e813d6386b0f2625688"
   },
   {
-    "url": "blog.html",
-    "revision": "fe167b9ad6348862c79e14081a8bd2fc"
-  },
-  {
-    "url": "blog.md",
-    "revision": "2ed3c01433125cf35152862982449076"
+    "url": "blog/index.html",
+    "revision": "0618e908c4551696b16d8bd3243f5a6e"
   },
   {
     "url": "css/body.css",
@@ -63,7 +56,7 @@ workbox.precache([
   },
   {
     "url": "feed.xml",
-    "revision": "7c62ad13430eacda891c19c35da05eef"
+    "revision": "be5112754a9601ba11a3cc7adbca95fd"
   },
   {
     "url": "fonts/font-awesome/css/font-awesome.css",
@@ -127,15 +120,15 @@ workbox.precache([
   },
   {
     "url": "index.html",
-    "revision": "1240d82671be440c6f788cd3a886760d"
+    "revision": "e3499f415e86470439c9e2c9a2cc9ddd"
   },
   {
     "url": "jekyll/update/2017/12/08/welcome-to-jekyll.1.html",
-    "revision": "a7b259534bf58d26d7f813fc0982c823"
+    "revision": "de32ff19628a86d8eb5e31a8c5425ab9"
   },
   {
     "url": "jekyll/update/2017/12/08/welcome-to-jekyll.html",
-    "revision": "b27db5a05400ac9981b932659cf4cf9b"
+    "revision": "c3b658d744e9987a1fc90aeca7b3c721"
   },
   {
     "url": "js/Card-circle.js",
@@ -175,20 +168,9 @@ workbox.precache([
   },
   {
     "url": "sw.js",
-    "revision": "06a56a0fcddd83c0f3cebf9c82d9ba06"
+    "revision": "a2baa7aec792d0402a52a3fcc506818f"
   }
-]);
+];
 
-
-
-
-
-
-
-
-
-
-
-
-self.addEventListener('install', () => self.skipWaiting());
-self.addEventListener('activate', () => self.clients.claim());
+const workboxSW = new self.WorkboxSW();
+workboxSW.precache(fileManifest);
