@@ -23,27 +23,39 @@ self.addEventListener('push', (event) => {
 workbox.precache([
   {
     "url": "404.html",
-    "revision": "8b86cde5ca6b681943fb596546d297c3"
+    "revision": "6a0fe4d94e0a00f270f545554ec682e7"
   },
   {
     "url": "about/index.html",
-    "revision": "5105850bf009b26a9ea521251eea46b9"
+    "revision": "eccf02f8193622bfb8e82f69056a29af"
   },
   {
     "url": "app.js",
-    "revision": "f43d0cfbbb5cb24424c25fb5d21b6658"
+    "revision": "0063b2b2a446a83eb65a7005cce9e427"
   },
   {
     "url": "assets/main.css",
     "revision": "3ccc41e0ee906e813d6386b0f2625688"
   },
   {
-    "url": "blog.html",
-    "revision": "fe167b9ad6348862c79e14081a8bd2fc"
+    "url": "blog/index.html",
+    "revision": "7ea6db03532cc78e951912d79dd3d4c2"
   },
   {
-    "url": "blog.md",
-    "revision": "2ed3c01433125cf35152862982449076"
+    "url": "build/sw.js",
+    "revision": "85310a2e7ed72507afc85b3a51a8cf6d"
+  },
+  {
+    "url": "build/workbox-sw.prod.v2.1.2.js",
+    "revision": "685d1ceb6b9a9f94aacf71d6aeef8b51"
+  },
+  {
+    "url": "build/workbox-sw.prod.v2.1.2.js.map",
+    "revision": "8e170beaf8b748367396e6039c808c74"
+  },
+  {
+    "url": "cost/saving/2017/12/08/Cost-Saving.html",
+    "revision": "f2980302484b97fae9c80b6810d60b85"
   },
   {
     "url": "css/body.css",
@@ -63,7 +75,7 @@ workbox.precache([
   },
   {
     "url": "feed.xml",
-    "revision": "7c62ad13430eacda891c19c35da05eef"
+    "revision": "f1a23a81927dc695291a8bf6a19c054d"
   },
   {
     "url": "fonts/font-awesome/css/font-awesome.css",
@@ -92,6 +104,14 @@ workbox.precache([
   {
     "url": "fonts/font-awesome/fonts/FontAwesome.otf",
     "revision": "0b462f5cc07779cab3bef252c0271f2b"
+  },
+  {
+    "url": "gis/2017/12/08/gis.html",
+    "revision": "100a08aa3098fe998e4bdbb577664fb2"
+  },
+  {
+    "url": "gmp/2017/12/08/welcome-to-jekyll.html",
+    "revision": "ae44c634959f80da3400f862aa91b85b"
   },
   {
     "url": "img/a.jpg",
@@ -127,15 +147,7 @@ workbox.precache([
   },
   {
     "url": "index.html",
-    "revision": "1240d82671be440c6f788cd3a886760d"
-  },
-  {
-    "url": "jekyll/update/2017/12/08/welcome-to-jekyll.1.html",
-    "revision": "a7b259534bf58d26d7f813fc0982c823"
-  },
-  {
-    "url": "jekyll/update/2017/12/08/welcome-to-jekyll.html",
-    "revision": "b27db5a05400ac9981b932659cf4cf9b"
+    "revision": "5a164ea6d0753721add96bf9a81aa571"
   },
   {
     "url": "js/Card-circle.js",
@@ -175,7 +187,15 @@ workbox.precache([
   },
   {
     "url": "sw.js",
-    "revision": "06a56a0fcddd83c0f3cebf9c82d9ba06"
+    "revision": "a2baa7aec792d0402a52a3fcc506818f"
+  },
+  {
+    "url": "usage/of/renewable/energy/sources/2017/12/08/استخدام-مصادر-الطاقة-المتجددة.html",
+    "revision": "eeaaa4a255c59ada43bf34febd681460"
+  },
+  {
+    "url": "sw.js",
+    "revision": "06a56a0fcdasd83c0f3cebf9c82d9ba06"
   }
 ]);
 
