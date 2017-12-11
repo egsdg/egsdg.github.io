@@ -3,13 +3,11 @@ layout: post
 title:  " Geographic Information Systems "
 date:   2017-12-08 23:33:55 +0000
 categories: gis
-image: "img/c.jpg"
-avatar: "img/authors/mm.jpg"
+image: "img/gis.jpg"
+avatar: "img/authors/alaa.jpg"
 ---
 **Data model (GIS)**
-
 A  **data model**  in  [**geographic**](https://en.wikipedia.org/wiki/Geographic_information_system) [information systems](https://en.wikipedia.org/wiki/Geographic_information_system) is a mathematical construct for representing geographic objects or surfaces as data
-
 The five steps in the analysis process are:
 
 1. Frame the question
@@ -18,18 +16,16 @@ The five steps in the analysis process are:
 4. Perform the analysis
 5. Examine and refine results
 
-##
-#
 Improved Communication
 
 GIS-based maps and visualizations greatly assist in understanding situations and in storytelling. They are a type of language that improves communication between different teams, departments, disciplines, professional fields, organizations, and the public. Michels Corporation improved collaboration and communication with GIS
 
-##
+
 # Better Record Keeping
 
 Many organizations have a primary responsibility of maintaining authoritative records about the status and change of geography. GIS provides a strong framework for managing these types of records
 
-##
+
 # Managing Geographically
 
 GIS is becoming essential to understanding what is happening and what will happen in geographic space. Once we understand, we can prescribe action. This new approach to management—managing geographically—is transforming the way organizations operate.
@@ -42,8 +38,6 @@ GIS is becoming essential to understanding what is happening and what will happe
 
 **The true value of GIS lies in their ability to analyze spatial data using the techniques of spatial analysis. Spatial analysis provides the valueadded products from existing datasets&quot;**
 
-#
-
 
 
 **Cost benefit:**
@@ -52,7 +46,7 @@ GIS benefits organizations of all sizes and in almost every industry. There is a
 
 GIS is widely used to optimize maintenance schedules and daily fleet movements. Typical implementations can result in a savings of 10 to 30 percent in operational expenses through reduction in fuel use and staff time, improved customer service, and more efficient scheduling.
 
-##
+
 # Better Decision Making
 
 GIS is the go-to technology for making better decisions about location. Common examples include real estate site selection, route/corridor selection, evacuation planning, conservation, natural resource extraction, etc. Making correct decisions about location is critical to the success of an organization.

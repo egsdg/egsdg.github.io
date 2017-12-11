@@ -3,33 +3,22 @@ layout: post
 title:  " Cost Saving "
 date:   2017-12-08 23:33:55 +0000
 categories: Cost Saving
-image: "img/c.jpg"
-avatar: "img/authors/mm.jpg"
+image: "img/Cost.jpeg"
+avatar: "img/authors/alaa.jpg"
 ---
 
 
-##
-# توفير التكاليف
-
-# Cost Saving
 
 
-
+**Cost Saving**
 ### ـ Smart E-mail reply:
+### This technology plays an important role in saving
+costs as it is automatic 
+replay on the expected inquiries of customers for such so it reduces time and effort for customer service department and it is important for companies &quot;HR &quot; sector in recruitment of few customer servi
 
-###
 
-### ـ تلعب هذه التكنولوجيا دوراً مهماً في توفير التكاليف حيث أنها عبارة عن رد أوتوماتيكي على الاستفسارات المتوقعة للعملاء، وبالتالي فهي توفر الوقت والجهد بالنسبة لقطاع خدمة العملاء، كما أنها مهمة للشركات بالنسبة لقطاع الموارد البشرية في تعيين عدد قليل من موظفي خدمة العملاء وهنا توفير التكاليف يتشكًّل في توفير رواتب عدد من الموظفين.
-
-### This technology plays an important role in saving costs as it is automatic replay on the expected inquiries of customers for such so it reduces time and effort for customer service department and it is important for companies &quot;HR &quot; sector in recruitment of few customer servi
 
 ### ce employees, therefore the employees&#39; salaries are decreased.
-
-###
-
-###
-
-###
 
 ### ـ Cloud computing:
 
@@ -37,48 +26,40 @@ avatar: "img/authors/mm.jpg"
 
  ـIt&#39;s called cloud computing because the information being accessed is found in &quot;the cloud&quot; and does not require a user to be in a specific place to gain access to it. This type of system allows employees to work remotely. Companies providing cloud services enable users to store files and applications on remote servers, and then access all the data via the internet.
 
-##
+
 
 Different Types of Cloud Computing:
 
 Cloud computing is not a single piece of technology, like a microchip or a cell phone. Rather, it&#39;s a system, primarily comprised of three services: infrastructure as a service (IaaS),
 
--
+
 ### Software as a Service (SaaS)
 
--
-**### Platform as a Service (PaaS)**
+### Platform as a Service (PaaS)
 
-###
-
-###
-
-###
-
-### ـ توفير التكاليف بالنسبة للإدارة:
 
 ـ Is turning out to be a great financial saver for SMBs (small and medium-sized businesses) and SOHO (small office/home office users) which would like to enjoy higher computational speeds and efficiency for less money and energy.
 
--
-### ••
 
-**### No Upfront Investments**
--
-### ••
+**No Upfront Investments**
 
-**### Fully Hardware Utilization**
--
-### ••
+**Fully Hardware Utilization**
 
-**### Low Power Costs**
--
-### ••
+**Low Power Costs**
 
-**### Reduced Workforce**
--
-### ••
+**Reduced Workforce**
 
-**### Redundancy**
+**Redundancy**
+
+
+________________________________________
+# توفير التكاليف
+### ـ تلعب هذه التكنولوجيا دوراً مهماً في توفير التكاليف حيث أنها عبارة عن رد أوتوماتيكي على الاستفسارات المتوقعة للعملاء، وبالتالي فهي توفر الوقت والجهد بالنسبة لقطاع خدمة العملاء، كما أنها مهمة للشركات بالنسبة لقطاع الموارد البشرية في تعيين عدد قليل من موظفي خدمة العملاء وهنا توفير التكاليف يتشكًّل في توفير رواتب عدد من الموظفين.
+### ـ توفير التكاليف بالنسبة للإدارة:
+
+
+
+
 
 <nav>
             <a href="{{ site.baseurl }}/">home</a>
