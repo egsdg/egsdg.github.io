@@ -7,7 +7,6 @@
 layout: compress
 ---
 
-<html lang="en" class="no-js">
 <head>
     <meta charset="UTF-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,12 +15,13 @@ layout: compress
     <meta name="description" content="{{ site.description }}"/>
     <meta name="keywords" content="{{ site.keywords }}"/>
     <meta name="author" content="{{ site.author }}"/>
-    <link rel="shortcut icon" href="{{site.baseurl }}/img/favicon.ico">
+    <link rel="icon" href="/img/favicon.ico">
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/normalize.css"/>
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/fonts/font-awesome/css/font-awesome.css"/>
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/body.css"/>
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/card.css"/>
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/pattern.css"/>
+    <link rel="manifest" href="/manifest.json">
     <!--[if IE]>
     <script type="text/javascript" src="js/vendors/html5.min.js"></script>
     <![endif]-->
@@ -39,12 +39,13 @@ layout: compress
     <header class="codrops-header">
       <h1>Sustainable Development  <span>التنميه المستدامه</span></h1>
       
-<nav>
-            <h1><a href="{{ site.baseurl }}/">Home</a></h1>
-          <h1>  <a href="{{ site.baseurl }}/about">About</a></h1>
-           <h1>  <a href="{{ site.baseurl }}/blog">Blog</a></h1>
-</nav>
 
+<nav class="codrops-demos">
+                <a href="{{ site.baseurl }}/">Home</a>
+              <a href="{{ site.baseurl }}/about">About</a>
+              <a href="{{ site.baseurl }}/blog/">Blog</a>
+                
+            </nav>
 
  </header>
     <div class="content">
@@ -106,4 +107,7 @@ layout: compress
 <script src="app.js" ></script>
 
 </body>
-</html>
+
+
+
+    

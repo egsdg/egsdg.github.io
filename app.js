@@ -2,14 +2,22 @@
 
 //Add this below content to your HTML page, or add the js file to your page at the very top to register sercie worker
 if (navigator.serviceWorker.controller) {
-  console.log('[PWA Builder] active service worker found, no need to register')
+  console.log('[Ahmed Alaa Builder] active service worker found, no need to register')
 } else {
 
 //Register the ServiceWorker
   navigator.serviceWorker.register('sw.js', {
-    scope: './',
-    scope: './blog'
+    scope: './'
   }).then(function(reg) {
     console.log('Service worker has been registered for scope:'+ reg.scope);
   });
 }
+
+
+self.addEventListener('push', (event) => {
+  const title = 'Get Started With Workbox For Webpack';
+  const options = {
+    body: event.data.text()
+  };
+  event.waitUntil(self.registration.showNotification(title, options));
+});

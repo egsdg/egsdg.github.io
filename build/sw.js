@@ -20,23 +20,15 @@ importScripts('workbox-sw.prod.v2.1.2.js');
 const fileManifest = [
   {
     "url": "404.html",
-    "revision": "6a0fe4d94e0a00f270f545554ec682e7"
+    "revision": "33e18f8dcea1c49e2c1c04ab3b7aff14"
   },
   {
     "url": "about/index.html",
-    "revision": "eccf02f8193622bfb8e82f69056a29af"
-  },
-  {
-    "url": "app.1.js",
-    "revision": "0063b2b2a446a83eb65a7005cce9e427"
-  },
-  {
-    "url": "app.2.js",
-    "revision": "680db3a221638152f1fda9d48124b318"
+    "revision": "3da2f6cd8c5180e85433a6fccd1ea3e2"
   },
   {
     "url": "app.js",
-    "revision": "680db3a221638152f1fda9d48124b318"
+    "revision": "f35e0e17abcb730c60d5536370b8de5e"
   },
   {
     "url": "assets/main.css",
@@ -44,11 +36,11 @@ const fileManifest = [
   },
   {
     "url": "blog/index.html",
-    "revision": "74ec38a332be9664754c94023a0dc348"
+    "revision": "6cfb6d8661595fd34cd05457ad3efa72"
   },
   {
     "url": "cost/saving/2017/12/08/Cost-Saving.html",
-    "revision": "22f086e0c17d4d734144ae2815933d75"
+    "revision": "f970cb86dc6ed0bf70ad0a5a3f5ecba7"
   },
   {
     "url": "css/body.css",
@@ -65,6 +57,14 @@ const fileManifest = [
   {
     "url": "css/pattern.css",
     "revision": "6cc3a4b5498b4518efeaed881a4bd2a7"
+  },
+  {
+    "url": "favicon.ico",
+    "revision": "de6c8ec71804205aa9074b3600fa7a1d"
+  },
+  {
+    "url": "feed.xml",
+    "revision": "a1dcd2dbbbd9b4b0a2d04488fbf1ea21"
   },
   {
     "url": "fonts/font-awesome/css/font-awesome.css",
@@ -96,11 +96,11 @@ const fileManifest = [
   },
   {
     "url": "gis/2017/12/08/gis.html",
-    "revision": "c1f606d8542d71148c0ec8b8ad9422be"
+    "revision": "db18ddab932c15d0c5101fb23e5f1764"
   },
   {
     "url": "gmp/2017/12/08/Good-Manufacturing-Practice.html",
-    "revision": "b16023b1518c24de8642cde43f281238"
+    "revision": "24bd57cdbcaa35e1c0b919fae728cac3"
   },
   {
     "url": "img/authors/ahmedcanvip.jpg",
@@ -136,7 +136,7 @@ const fileManifest = [
   },
   {
     "url": "img/gis.jpg",
-    "revision": "ecbcc6310967d4bed745d12f99f3ac2c"
+    "revision": "c181c9c2b4100744d6d10f8b2b3b77ef"
   },
   {
     "url": "img/gmp.png",
@@ -144,7 +144,7 @@ const fileManifest = [
   },
   {
     "url": "index.html",
-    "revision": "4be4c7e4704de65931c850a0e066cee1"
+    "revision": "7ee1cf71f3c5ca9f3f73444148da387c"
   },
   {
     "url": "js/Card-circle.js",
@@ -175,28 +175,12 @@ const fileManifest = [
     "revision": "1d4514e6131e1758432e33301e4bf1a4"
   },
   {
-    "url": "manifest.json",
-    "revision": "b882061d5365225b38804452ef094ed9"
-  },
-  {
-    "url": "package.json",
-    "revision": "674acfcaf212c8d96fd069ed82574193"
-  },
-  {
-    "url": "sw.2.js",
-    "revision": "15d3d3f1803abcfe0ed002d6d5673136"
-  },
-  {
-    "url": "sw.js",
-    "revision": "db6417cd2c8d5edb8a7093017aca5b74"
-  },
-  {
-    "url": "sw3.js",
-    "revision": "15d3d3f1803abcfe0ed002d6d5673136"
-  },
-  {
     "url": "usage/of/renewable/energy/sources/2017/12/08/Usage-of-Renewable-Energy-sources.html",
-    "revision": "703b30c1c50b30d6ba5d753e16a205b0"
+    "revision": "45f258b8aa4a1b3be650ff29b2f6ec4d"
+  },
+  {
+    "url": "workbox-cli-config.js",
+    "revision": "e93d9dab3b10d2108662077cfef727b5"
   }
 ];
 

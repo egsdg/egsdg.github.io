@@ -141,9 +141,18 @@
 .meta__avatar {
 	height: 80px;
   width: 80px;
-	border-radius: 50%;
+	border-radius: 90%;
 }
-
+.meta__aboutavatar {
+	height: 180px;
+  width: 180px;
+	border-radius: 90%;
+}
+.meta__atavatar {
+	height: 300px;
+  width: 300px;
+	border-radius: 90%;
+}
 .meta__author {
 	font-weight: bold;
 	padding: 0 15px;
