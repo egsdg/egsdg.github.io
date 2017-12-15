@@ -1,27 +1,17 @@
-importScripts('workbox-sw.prod.v2.1.2.js');
+importScripts('https://cdn.jsdelivr.net/npm/workbox-sw@2.1.2/build/importScripts/workbox-sw.prod.v2.1.2.min.js');
+const workbox = new WorkboxSW({
+  skipWaiting: true,
+  clientsClaim: true
+});
 
-/**
- * DO NOT EDIT THE FILE MANIFEST ENTRY
- *
- * The method precache() does the following:
- * 1. Cache URLs in the manifest to a local cache.
- * 2. When a network request is made for any of these URLs the response
- *    will ALWAYS comes from the cache, NEVER the network.
- * 3. When the service worker changes ONLY assets with a revision change are
- *    updated, old cache entries are left as is.
- *
- * By changing the file manifest manually, your users may end up not receiving
- * new versions of files because the revision hasn't changed.
- *
- * Please use workbox-build or some other tool / approach to generate the file
- * manifest which accounts for changes to local files and update the revision
- * accordingly.
- */
+workbox.router.registerRoute(/(.*)img(.*)\.(?:png|gif|jpg|html)/,
+  workbox.strategies.networkFirst(),
+                             
+
+
+);
 const fileManifest = [
-  {
-    "url": "404.html",
-    "revision": "33e18f8dcea1c49e2c1c04ab3b7aff14"
-  },
+  
   {
     "url": "about/index.html",
     "revision": "3da2f6cd8c5180e85433a6fccd1ea3e2"
@@ -103,7 +93,7 @@ const fileManifest = [
     "revision": "24bd57cdbcaa35e1c0b919fae728cac3"
   },
   {
-    "url": "img/authors/ahmedcanvip.jpg",
+    "url": "img/authors/ahmed.jpg",
     "revision": "224a664f849489f84ec4d8e7a4a84bbe"
   },
   {
@@ -186,3 +176,8 @@ const fileManifest = [
 
 const workboxSW = new self.WorkboxSW();
 workboxSW.precache(fileManifest);
+
+
+
+self.addEventListener('install', () => self.skipWaiting());
+self.addEventListener('activate', () => self.clients.claim());

@@ -115,25 +115,35 @@ Front-End Web Development :
 </div>
 #### Basic Information :
 
-Name       : Muhammad Mustafa  
+Name       : Muhammad Mustafa Muhammad
 
-Title      : ###  
-Education : ###
+Title      : Student 
+ Education:
+- Bussines Administration at Faculty of commerce-Alexandria university..
+- Management, Marketing and Sales at Arab Academy for science, technology and maritime transportation..
 
 #### Job Description :
 ```
-Content manager & Project Admin :
-* ###
-* ##
-* ##
+- Content Manager
+- ‎Project Admin
+
+Skills:
+- English
+- Microsoft Office
+- ‎Adobe Photoshop
+- ‎Adobe Illustrator
+
+
 ```
 #### Contact Information :
 
-* Facebook : [@###](https://www.facebook.com/)  
-* Twitter : [@###](https://www.twitter.com/)  
-* Linkedin : [@###](https://www.linkedin.com/in/)  
-* Github : [@###](https://github.com/)  
-* blog : [###](http://www.###.com)
+
+
+
+* Facebook : [Muhammad Mustafa](https://www.facebook.com/Muhammad6Mustafa)  
+* Twitter : [junior_mostafa](https://mobile.twitter.com/junior_mostafa)  
+* Linkedin : [muhammad-mustafa](https://www.linkedin.com/in/muhammad-mustafa-35bb77144)  
+
 
 ---
 
@@ -147,22 +157,23 @@ Content manager & Project Admin :
 
 Name       : Alaa Sherif Hassan  
 
-Title      : ###  
-Education : ###
+Title      : Student 
+
+Education: Business administration at Faculty of Commerce-Alexandria University
 
 #### Job Description :
 ```
-Content manager & Project Admin : 
-* ###
-* ##
-* ##
+- Content Manager
+- ‎Project Admin
+
+Skills:
+- English
+- Microsoft Office
+- Highly committed for tasks
+- Perfect decision maker
+- Handle problems in efficient way 
+- Leadership skills
 ```
 #### Contact Information :
 
-* Facebook : [@###](https://www.facebook.com/)  
-* Twitter : [@###](https://www.twitter.com/)  
-* Linkedin : [@###](https://www.linkedin.com/in/)  
-* Github : [@###](https://github.com/)  
-* blog : [###](http://www.###.com)
-* 
-
+* Facebook : [Alaa Sherif Hassan  ](https://www.facebook.com/alaa.sherif.1042)  

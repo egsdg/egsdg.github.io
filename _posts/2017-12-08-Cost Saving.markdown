@@ -8,8 +8,6 @@ avatar: "img/authors/alaa.jpg"
 ---
 
 
-
-
 **Cost Saving**
 ### ـ Smart E-mail reply:
 ### This technology plays an important role in saving

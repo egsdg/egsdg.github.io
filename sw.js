@@ -4,20 +4,18 @@ const workbox = new WorkboxSW({
   clientsClaim: true
 });
 
-workbox.router.registerRoute(/(.*)img(.*)\.(?:png|gif|jpg|html)/,
-  workbox.strategies.networkFirst(),
-                             
-
-);
 const fileManifest = [
-  
+  {
+    "url": "404.html",
+    "revision": "33e18f8dcea1c49e2c1c04ab3b7aff14"
+  },
   {
     "url": "about/index.html",
-    "revision": "3da2f6cd8c5180e85433a6fccd1ea3e2"
+    "revision": "325735b3bd28292244829b18a480ba4e"
   },
   {
     "url": "app.js",
-    "revision": "f35e0e17abcb730c60d5536370b8de5e"
+    "revision": "49da450f74c9ac2cdbd561274e7ac17f"
   },
   {
     "url": "assets/main.css",
@@ -37,7 +35,7 @@ const fileManifest = [
   },
   {
     "url": "css/card.css",
-    "revision": "0e86894fc8d32e774a4cc35472e32feb"
+    "revision": "3026364ffec5fb9aa6355194c0675908"
   },
   {
     "url": "css/normalize.css",
@@ -50,10 +48,6 @@ const fileManifest = [
   {
     "url": "favicon.ico",
     "revision": "de6c8ec71804205aa9074b3600fa7a1d"
-  },
-  {
-    "url": "feed.xml",
-    "revision": "a1dcd2dbbbd9b4b0a2d04488fbf1ea21"
   },
   {
     "url": "fonts/font-awesome/css/font-awesome.css",
@@ -93,15 +87,15 @@ const fileManifest = [
   },
   {
     "url": "img/authors/ahmed.jpg",
-    "revision": "224a664f849489f84ec4d8e7a4a84bbe"
+    "revision": "ca25a74483de81bda9703612e74d8289"
   },
   {
     "url": "img/authors/alaa.jpg",
-    "revision": "a21c94806e15a87f3f3d182eefbb3f0f"
+    "revision": "87d627d74b482ccf474d80d47131e9d5"
   },
   {
     "url": "img/authors/mm.jpg",
-    "revision": "94560eb27bce9cf083dcaa1b709632c4"
+    "revision": "8a04923e2af8f825e2f67da851c161b1"
   },
   {
     "url": "img/authors/moh.jpg",
@@ -112,28 +106,44 @@ const fileManifest = [
     "revision": "0004cc30e1156aa1dbc9a75436746ef0"
   },
   {
-    "url": "img/Cost.jpeg",
+    "url": "img/Cost.1.jpeg",
     "revision": "45b398dbd9a979ab805ad2e94e0e71ca"
   },
   {
-    "url": "img/e.jpg",
+    "url": "img/Cost.jpeg",
+    "revision": "18340eba94b480565bc83234baf2b082"
+  },
+  {
+    "url": "img/e.1.jpg",
     "revision": "1ab1e67c99f1a1b149725f2c8b247564"
+  },
+  {
+    "url": "img/e.jpg",
+    "revision": "29c95ad40f09487d7b061c28a581622d"
   },
   {
     "url": "img/favicon.ico",
     "revision": "de6c8ec71804205aa9074b3600fa7a1d"
   },
   {
-    "url": "img/gis.jpg",
+    "url": "img/gis.1.jpg",
     "revision": "c181c9c2b4100744d6d10f8b2b3b77ef"
   },
   {
-    "url": "img/gmp.png",
+    "url": "img/gis.jpg",
+    "revision": "c57311a186d4a2130de9f165e668d808"
+  },
+  {
+    "url": "img/gmp.1.png",
     "revision": "a0afb5283a9634e0c948cae494570926"
   },
   {
+    "url": "img/gmp.png",
+    "revision": "64ade9eb817b6dfd950f9dcacd5549e8"
+  },
+  {
     "url": "index.html",
-    "revision": "7ee1cf71f3c5ca9f3f73444148da387c"
+    "revision": "cd82059074701716bd0ee4459dc30a9b"
   },
   {
     "url": "js/Card-circle.js",
@@ -166,17 +176,8 @@ const fileManifest = [
   {
     "url": "usage/of/renewable/energy/sources/2017/12/08/Usage-of-Renewable-Energy-sources.html",
     "revision": "45f258b8aa4a1b3be650ff29b2f6ec4d"
-  },
-  {
-    "url": "workbox-cli-config.js",
-    "revision": "e93d9dab3b10d2108662077cfef727b5"
   }
 ];
 
 const workboxSW = new self.WorkboxSW();
 workboxSW.precache(fileManifest);
-
-
-
-self.addEventListener('install', () => self.skipWaiting());
-self.addEventListener('activate', () => self.clients.claim());
