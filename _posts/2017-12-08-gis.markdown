@@ -4,6 +4,7 @@ title:  " Geographic Information Systems "
 date:   2017-12-08 23:33:55 +0000
 categories: gis
 image: "img/gis.jpg"
+
 avatar: "img/authors/alaa.jpg"
 ---
 **Data model (GIS)**
