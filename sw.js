@@ -1,12 +1,28 @@
-importScripts('https://cdn.jsdelivr.net/npm/workbox-sw@2.1.2/build/importScripts/workbox-sw.prod.v2.1.2.min.js');
+importScripts('workbox-sw.prod.v2.1.2.js');
 const workbox = new WorkboxSW({
   skipWaiting: true,
   clientsClaim: true
 });
-
+/**
+ * DO NOT EDIT THE FILE MANIFEST ENTRY
+ *
+ * The method precache() does the following:
+ * 1. Cache URLs in the manifest to a local cache.
+ * 2. When a network request is made for any of these URLs the response
+ *    will ALWAYS comes from the cache, NEVER the network.
+ * 3. When the service worker changes ONLY assets with a revision change are
+ *    updated, old cache entries are left as is.
+ *
+ * By changing the file manifest manually, your users may end up not receiving
+ * new versions of files because the revision hasn't changed.
+ *
+ * Please use workbox-build or some other tool / approach to generate the file
+ * manifest which accounts for changes to local files and update the revision
+ * accordingly.
+ */
 const fileManifest = [
   {
-    "url": "404.html",
+    "url": "/404.html",
     "revision": "33e18f8dcea1c49e2c1c04ab3b7aff14"
   },
   {
@@ -15,7 +31,7 @@ const fileManifest = [
   },
   {
     "url": "app.js",
-    "revision": "49da450f74c9ac2cdbd561274e7ac17f"
+    "revision": "ca05b0a89020e5590e69d4a01175fdda"
   },
   {
     "url": "assets/main.css",
@@ -24,6 +40,14 @@ const fileManifest = [
   {
     "url": "blog/index.html",
     "revision": "6cfb6d8661595fd34cd05457ad3efa72"
+  },
+  {
+    "url": "build/sw.js",
+    "revision": "122152f30e8d2475bcb20651b8b2a606"
+  },
+  {
+    "url": "build/workbox-sw.prod.v2.1.2.js",
+    "revision": "685d1ceb6b9a9f94aacf71d6aeef8b51"
   },
   {
     "url": "cost/saving/2017/12/08/Cost-Saving.html",
@@ -106,16 +130,8 @@ const fileManifest = [
     "revision": "0004cc30e1156aa1dbc9a75436746ef0"
   },
   {
-    "url": "img/Cost.1.jpeg",
-    "revision": "45b398dbd9a979ab805ad2e94e0e71ca"
-  },
-  {
     "url": "img/Cost.jpeg",
     "revision": "18340eba94b480565bc83234baf2b082"
-  },
-  {
-    "url": "img/e.1.jpg",
-    "revision": "1ab1e67c99f1a1b149725f2c8b247564"
   },
   {
     "url": "img/e.jpg",
@@ -126,16 +142,8 @@ const fileManifest = [
     "revision": "de6c8ec71804205aa9074b3600fa7a1d"
   },
   {
-    "url": "img/gis.1.jpg",
-    "revision": "c181c9c2b4100744d6d10f8b2b3b77ef"
-  },
-  {
     "url": "img/gis.jpg",
     "revision": "c57311a186d4a2130de9f165e668d808"
-  },
-  {
-    "url": "img/gmp.1.png",
-    "revision": "a0afb5283a9634e0c948cae494570926"
   },
   {
     "url": "img/gmp.png",
@@ -174,8 +182,20 @@ const fileManifest = [
     "revision": "1d4514e6131e1758432e33301e4bf1a4"
   },
   {
+    "url": "sw.js",
+    "revision": "a26b8bb5476ae74feb2c11246927afba"
+  },
+  {
     "url": "usage/of/renewable/energy/sources/2017/12/08/Usage-of-Renewable-Energy-sources.html",
     "revision": "45f258b8aa4a1b3be650ff29b2f6ec4d"
+  },
+  {
+    "url": "workbox-cli-config.js",
+    "revision": "7023f2205ef760c62e83520f2a882cf5"
+  },
+  {
+    "url": "workbox-sw.prod.v2.1.2.js",
+    "revision": "685d1ceb6b9a9f94aacf71d6aeef8b51"
   }
 ];
 

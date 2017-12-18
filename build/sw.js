@@ -1,24 +1,37 @@
-importScripts('https://cdn.jsdelivr.net/npm/workbox-sw@2.1.2/build/importScripts/workbox-sw.prod.v2.1.2.min.js');
+importScripts('workbox-sw.prod.v2.1.2.js');
 const workbox = new WorkboxSW({
   skipWaiting: true,
   clientsClaim: true
 });
-
-workbox.router.registerRoute(/(.*)img(.*)\.(?:png|gif|jpg|html)/,
-  workbox.strategies.networkFirst(),
-                             
-
-
-);
+/**
+ * DO NOT EDIT THE FILE MANIFEST ENTRY
+ *
+ * The method precache() does the following:
+ * 1. Cache URLs in the manifest to a local cache.
+ * 2. When a network request is made for any of these URLs the response
+ *    will ALWAYS comes from the cache, NEVER the network.
+ * 3. When the service worker changes ONLY assets with a revision change are
+ *    updated, old cache entries are left as is.
+ *
+ * By changing the file manifest manually, your users may end up not receiving
+ * new versions of files because the revision hasn't changed.
+ *
+ * Please use workbox-build or some other tool / approach to generate the file
+ * manifest which accounts for changes to local files and update the revision
+ * accordingly.
+ */
 const fileManifest = [
-  
+  {
+    "url": "404.html",
+    "revision": "33e18f8dcea1c49e2c1c04ab3b7aff14"
+  },
   {
     "url": "about/index.html",
-    "revision": "3da2f6cd8c5180e85433a6fccd1ea3e2"
+    "revision": "325735b3bd28292244829b18a480ba4e"
   },
   {
     "url": "app.js",
-    "revision": "f35e0e17abcb730c60d5536370b8de5e"
+    "revision": "ca05b0a89020e5590e69d4a01175fdda"
   },
   {
     "url": "assets/main.css",
@@ -27,6 +40,14 @@ const fileManifest = [
   {
     "url": "blog/index.html",
     "revision": "6cfb6d8661595fd34cd05457ad3efa72"
+  },
+  {
+    "url": "build/sw.js",
+    "revision": "122152f30e8d2475bcb20651b8b2a606"
+  },
+  {
+    "url": "build/workbox-sw.prod.v2.1.2.js",
+    "revision": "685d1ceb6b9a9f94aacf71d6aeef8b51"
   },
   {
     "url": "cost/saving/2017/12/08/Cost-Saving.html",
@@ -38,7 +59,7 @@ const fileManifest = [
   },
   {
     "url": "css/card.css",
-    "revision": "0e86894fc8d32e774a4cc35472e32feb"
+    "revision": "3026364ffec5fb9aa6355194c0675908"
   },
   {
     "url": "css/normalize.css",
@@ -51,10 +72,6 @@ const fileManifest = [
   {
     "url": "favicon.ico",
     "revision": "de6c8ec71804205aa9074b3600fa7a1d"
-  },
-  {
-    "url": "feed.xml",
-    "revision": "a1dcd2dbbbd9b4b0a2d04488fbf1ea21"
   },
   {
     "url": "fonts/font-awesome/css/font-awesome.css",
@@ -94,15 +111,15 @@ const fileManifest = [
   },
   {
     "url": "img/authors/ahmed.jpg",
-    "revision": "224a664f849489f84ec4d8e7a4a84bbe"
+    "revision": "ca25a74483de81bda9703612e74d8289"
   },
   {
     "url": "img/authors/alaa.jpg",
-    "revision": "a21c94806e15a87f3f3d182eefbb3f0f"
+    "revision": "87d627d74b482ccf474d80d47131e9d5"
   },
   {
     "url": "img/authors/mm.jpg",
-    "revision": "94560eb27bce9cf083dcaa1b709632c4"
+    "revision": "8a04923e2af8f825e2f67da851c161b1"
   },
   {
     "url": "img/authors/moh.jpg",
@@ -114,11 +131,11 @@ const fileManifest = [
   },
   {
     "url": "img/Cost.jpeg",
-    "revision": "45b398dbd9a979ab805ad2e94e0e71ca"
+    "revision": "18340eba94b480565bc83234baf2b082"
   },
   {
     "url": "img/e.jpg",
-    "revision": "1ab1e67c99f1a1b149725f2c8b247564"
+    "revision": "29c95ad40f09487d7b061c28a581622d"
   },
   {
     "url": "img/favicon.ico",
@@ -126,15 +143,15 @@ const fileManifest = [
   },
   {
     "url": "img/gis.jpg",
-    "revision": "c181c9c2b4100744d6d10f8b2b3b77ef"
+    "revision": "c57311a186d4a2130de9f165e668d808"
   },
   {
     "url": "img/gmp.png",
-    "revision": "a0afb5283a9634e0c948cae494570926"
+    "revision": "64ade9eb817b6dfd950f9dcacd5549e8"
   },
   {
     "url": "index.html",
-    "revision": "7ee1cf71f3c5ca9f3f73444148da387c"
+    "revision": "cd82059074701716bd0ee4459dc30a9b"
   },
   {
     "url": "js/Card-circle.js",
@@ -165,19 +182,22 @@ const fileManifest = [
     "revision": "1d4514e6131e1758432e33301e4bf1a4"
   },
   {
+    "url": "sw.js",
+    "revision": "a26b8bb5476ae74feb2c11246927afba"
+  },
+  {
     "url": "usage/of/renewable/energy/sources/2017/12/08/Usage-of-Renewable-Energy-sources.html",
     "revision": "45f258b8aa4a1b3be650ff29b2f6ec4d"
   },
   {
     "url": "workbox-cli-config.js",
-    "revision": "e93d9dab3b10d2108662077cfef727b5"
+    "revision": "7023f2205ef760c62e83520f2a882cf5"
+  },
+  {
+    "url": "workbox-sw.prod.v2.1.2.js",
+    "revision": "685d1ceb6b9a9f94aacf71d6aeef8b51"
   }
 ];
 
 const workboxSW = new self.WorkboxSW();
 workboxSW.precache(fileManifest);
-
-
-
-self.addEventListener('install', () => self.skipWaiting());
-self.addEventListener('activate', () => self.clients.claim());
